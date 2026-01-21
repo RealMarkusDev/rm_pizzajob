@@ -6,7 +6,7 @@
 ![Framework](https://img.shields.io/badge/Framework-ESX%20%7C%20QBCore-blue)
 ![Version](https://img.shields.io/badge/Version-1.0.0-green)
 
-Showcase: https://youtu.be/V95tncajyX4
+Showcase: https://www.youtube.com/watch?v=t9yg9tJl18U
 Discord: https://discord.gg/7TZBfTazu9 (More scripts coming soon 🔥🚀)
 ## ✨ Features
 
@@ -52,3 +52,4 @@ You are NOT allowed to:
 ❌ Claim this work as your own
 
 Real Markus Development. All rights reserved.
+
