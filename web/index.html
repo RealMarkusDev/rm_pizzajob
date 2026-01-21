@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markus Pizzeria - Fleet Management</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body> 
+    <div class="app-container" id="app-container">
+        
+        <!-- VIEW 1: CATEGORY SELECTION -->
+        <div id="view-selector" class="view-panel active-view">
+            <header class="main-header">
+                <div class="brand-identity">
+                    <div class="brand-icon">
+                        <i class="fa-solid fa-pizza-slice"></i>
+                    </div>
+                    <div class="brand-info">
+                        <h1>MARKUS</h1>
+                        <span class="subtitle">PREMIUM DELIVERY</span>
+                    </div>
+                </div>
+                
+                <button class="action-btn close-btn" id="btn-close">
+                    <span>EXIT</span>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </header>
+
+            <main class="content-area">
+                <div class="section-title">
+                    <h2>SELECT VEHICLE TYPE</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="grid-container" id="category-list">
+                    <!-- Categories will be injected here via JS -->
+                </div>
+            </main>
+        </div>
+
+        <!-- VIEW 2: VEHICLE DETAILS & ACTIONS -->
+        <div id="view-details" class="view-panel side-panel hidden">
+            <div class="panel-wrapper">
+                
+                <div class="panel-top-nav">
+                    <button class="nav-btn back-btn" id="btn-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <span>BACK</span>
+                    </button>
+                </div>
+
+                <div class="panel-header">
+                    <h2 id="vehicle-name">LOADING...</h2>
+                    <div class="status-badge" id="vehicle-type-label">DELIVERY FLEET</div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="list-section">
+                        <h3>AVAILABLE FLEET</h3>
+                        <div class="scrollable-list" id="vehicle-list">
+                            <!-- Vehicles list injected here -->
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>SHIFT INFORMATION</h3>
+                        <ul class="info-details">
+                            <li>
+                                <i class="fa-solid fa-clock"></i>
+                                <span><strong>Shift:</strong> Flexible Hours</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-sack-dollar"></i>
+                                <span><strong>Payout:</strong> Per Delivery</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span><strong>Zone:</strong> City Wide</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <footer class="panel-footer" id="action-footer">
+                    <!-- Spawn/Action buttons injected here -->
+                </footer>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
